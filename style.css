@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1e3a5f
+    );
+}
+
+/* Calculadora */
+
+.calculadora {
+    width: 420px;
+    max-width: 100%;
+
+    padding: 25px;
+
+    background-color: #1f2937;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 25px;
+}
+
+/* Display */
+
+.display {
+    width: 100%;
+    height: 80px;
+
+    margin-bottom: 20px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #111827;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    text-align: right;
+
+    outline: none;
+}
+
+/* Botões */
+
+.botoes {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+button {
+    min-height: 58px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #374151;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #4b5563;
+
+    transform: scale(1.04);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Operadores */
+
+.operador {
+    background-color: #f59e0b;
+}
+
+.operador:hover {
+    background-color: #fbbf24;
+}
+
+/* Igual */
+
+.igual {
+    background-color: #10b981;
+}
+
+.igual:hover {
+    background-color: #34d399;
+}
+
+/* Limpar */
+
+.limpar {
+    background-color: #ef4444;
+}
+
+.limpar:hover {
+    background-color: #f87171;
+}
+
+/* Botão zero */
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Texto inferior */
+
+.info {
+    margin-top: 15px;
+
+    color: #9ca3af;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+/* Responsividade */
+
+@media (max-width: 450px) {
+
+    .calculadora {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .display {
+        height: 70px;
+        font-size: 26px;
+    }
+
+    button {
+        min-height: 52px;
+        font-size: 16px;
+    }
+}
+
+
